@@ -1,0 +1,39 @@
+<sdf version="1.6">
+  <model name="box">
+    <pose>0 0 0.1 0 0 0</pose>
+
+    <link name="link">
+      <inertial>
+        <mass>1.0</mass>
+      </inertial>
+
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 0.5 0.5</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.5 0.5 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+    </link>
+
+    <!--  UNIQUE namespace injected dynamically -->
+    <plugin name="move_plugin_1" filename="libgazebo_ros_planar_move.so">
+      <ros>
+        <namespace>/box_ns</namespace>
+      </ros>
+      <command_topic>cmd_vel</command_topic>
+    </plugin>
+
+  </model>
+</sdf>
