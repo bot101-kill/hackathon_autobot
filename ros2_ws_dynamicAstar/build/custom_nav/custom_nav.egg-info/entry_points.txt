@@ -1,0 +1,8 @@
+[console_scripts]
+controller_node = custom_nav.controller_node:main
+multi_random_box = custom_nav.multi_random_box:main
+planner_node = custom_nav.planner_node:main
+random_box = custom_nav.random_box:main
+spawn_boxes = custom_nav.spawn_boxes:main
+state_node = custom_nav.state_node:main
+
