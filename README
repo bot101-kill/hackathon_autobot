@@ -1,0 +1,5 @@
+this repo is for autonomous navigation using RL
+1.ROS2_ws_dynamicAstar contains model for  autonomous navigation on ROS Gazebo using Dynamic Astar algorithm.
+2. RL_SAC contains an self dependent , RL based approach for the same .
+3. Sac_Astar contains an hybrid approach for the same , though not on ros yet
+
